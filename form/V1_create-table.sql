@@ -1,0 +1,21 @@
+ CREATE TABLE paciente (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    sexo VARCHAR(70) NOT NULL,
+    genero VARCHAR(50),
+    rg VARCHAR(15) NOT NULL unique,
+    cns VARCHAR(12) NOT NULL unique,
+    data_nascimento DATE NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    nome_mae VARCHAR(50) NOT NULL,
+    cep VARCHAR(9) NOT NULL,
+    endereco VARCHAR(100) NOT NULL,
+    numero VARCHAR(50) NOT NULL,
+    complemento VARCHAR(500) default '',
+    bairro VARCHAR(100) NOT NULL,
+    cidade VARCHAR(100) NOT NULL,
+    uf CHAR(2) NOT NULL,
+    email VARCHAR(100),
+    doenca VARCHAR(20) NOT NULL,
+    comentario varchar(500) default ''
+    ) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
